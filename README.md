@@ -1,6 +1,6 @@
 # Version Alpha 1.0.0
 
-It's just a 'command line' api!
+It's just a **command line** api!
 There is no visual interface, but you can login, get evaluations and the timetable.
 
 ### Login
@@ -17,24 +17,24 @@ The server will return the raw fetched json, and the function will save it to th
 
 #### Marks class
 
-This is a client side class for organising the returned raw data.
+This is a client side class for **organising** the returned raw data.
 You can use it by passing it the raw data, like this: `let marks = new Marks(evaluations)`.
 You can get the organized evaluations from the `.marks` list.
 
 ### Timetable
 
 I'm not planning on useing this data yet, so it is just for fun!
-The request function is not completed yet!
+The request function is **not completed yet**!
 
 ### Callback functions
 
-They are optional, the function will save the response regardless.
+They are **optional**, the function will save the response regardless.
 They will recive the server response as a parameter.
 If the server returns an error, the callback function won't be called!
 
 ### Errors
 
-Error handeling is on the minimal side for now.
+Error handeling is on the **minimal** side for now.
 In case of an error, the server will return an error message, with a code indicating the source off the error.
 Incorrect password or username counts as an error too!
 
