@@ -2,9 +2,7 @@
 
 ## Table of contents
 
-[Change log](#changelog)
-
-...snip...
+1. [Change log](#changelog)
 
 <a name="changelog"/>
 
