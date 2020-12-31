@@ -3,6 +3,8 @@
 It's just a **command line** api!
 There is no visual interface, but you can login, get evaluations and the timetable.
 
+## functions
+
 ### Login
 
 You can login with the `getToken(username, password, institute, [callback]);` function.
