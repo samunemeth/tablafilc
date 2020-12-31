@@ -1,9 +1,17 @@
 # Version Alpha 1.0.0
 
+## Change log
+
+This is the first version!
+
+## Goal
+
+The goal of this version, is to implemet basic API connectivity.
+
+## usage
+
 It's just a **command line** api!
 There is no visual interface, but you can login, get evaluations and the timetable.
-
-## functions
 
 ### Login
 
@@ -40,9 +48,17 @@ Error handeling is on the **minimal** side for now.
 In case of an error, the server will return an error message, with a code indicating the source off the error.
 Incorrect password or username counts as an error too!
 
-## Goal
+## Running localy
 
-The goal of this project is, to create a app, than can calculate the number of grades you need, to get a metter grade at the end of the year.
+Feel free to download, and modify the code!
+Before running it, make sure that all packages are installed, by running `npm intall` in the root directory.
+You can run the application with `node index.js`, or with the shorter `node .` command.
+The application will run on port `3919` by default, but you can change that in the *index.js* file, with the `PORT` varible.
+
+## Runnning in 2 steps:
+
+1. `npm install`
+2. `node .`
 
 ## Conclusin
 
@@ -52,13 +68,6 @@ This is just a small part of a bigger project!
 - [ ] User interface
 - [ ] Calculations
 - [ ] Project planner (Maybe?)
-
-## Running localy
-
-Feel free to download, and modify the code!
-Before running it, make sure that all packages are installed, by running `npm intall` in the root directory.
-You can run the application with `node index.js`, or with the shorter `node .` command.
-The application will run on port `3919` by default, but you can change that in the *index.js* file, with the `PORT` varible.
 
 ## Sources
 
