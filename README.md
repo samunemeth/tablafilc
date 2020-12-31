@@ -1,10 +1,16 @@
 # Version Alpha 1.0.0
 
+This is the first official release!
+You can find the files for the open source Táblafilc e-kreta API here!
+
 ## Table of contents
 
 1. [Change log](#changelog)
 2. [Goal](#goal)
 3. [Usage](#usage)
+4. [Running localy](#runninglocaly)
+5. [Conclusion](#conclusion)
+6. [Sources](#sources)
 
 <a name="changelog"/>
 
@@ -60,6 +66,8 @@ Error handeling is on the **minimal** side for now.
 In case of an error, the server will return an error message, with a code indicating the source off the error.
 Incorrect password or username counts as an error too!
 
+<a name="runninglocaly" />
+
 ## Running localy
 
 Feel free to download, and modify the code!
@@ -72,6 +80,8 @@ The application will run on port `3919` by default, but you can change that in t
 1. `npm install`
 2. `node .`
 
+<a name="conclusion" />
+
 ## Conclusin
 
 This is just a small part of a bigger project!
@@ -80,6 +90,8 @@ This is just a small part of a bigger project!
 - [ ] User interface
 - [ ] Calculations
 - [ ] Project planner (Maybe?)
+
+<a name="sources" />
 
 ## Sources
 
