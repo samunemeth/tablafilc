@@ -5,12 +5,12 @@ You can find the files for the open source Táblafilc e-kreta API here!
 
 ## Table of contents
 
-1. [Change log](#changelog)
-2. [Goal](#goal)
-3. [Usage](#usage)
-4. [Running localy](#runninglocaly)
-5. [Conclusion](#conclusion)
-6. [Sources](#sources)
+- [Change log](#changelog)
+- [Goal](#goal)
+- [Usage](#usage)
+- [Running localy](#runninglocaly)
+- [Conclusion](#conclusion)
+- [Sources](#sources)
 
 <a name="changelog"/>
 
