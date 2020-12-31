@@ -47,7 +47,6 @@ The goal of this project is, to create a app, than can calculate the number of g
 This is just a small part of a bigger project!
 
 - [X] API connection
-- [X] Login and data retival
 - [ ] User interface
 - [ ] Calculations
 - [ ] Project planner (Maybe?)
