@@ -3,6 +3,8 @@
 ## Table of contents
 
 1. [Change log](#changelog)
+2. [Goal](#goal)
+3. [Usage](#usage)
 
 <a name="changelog"/>
 
@@ -10,9 +12,13 @@
 
 This is the first version!
 
+<a name="goal"/>
+
 ## Goal
 
 The goal of this version, is to implemet basic API connectivity.
+
+<a name="usage"/>
 
 ## usage
 
