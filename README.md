@@ -1,5 +1,10 @@
 # Version Alpha 1.0.0
 
+## Table of contents
+
+[Change log](#changelog)
+
+<a name="changelog"/>
 ## Change log
 
 This is the first version!
