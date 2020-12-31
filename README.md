@@ -4,7 +4,10 @@
 
 [Change log](#changelog)
 
+...snip...
+
 <a name="changelog"/>
+
 ## Change log
 
 This is the first version!
