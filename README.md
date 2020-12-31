@@ -52,6 +52,12 @@ This is just a small part of a bigger project!
 - [ ] Calculations
 - [ ] Project planner (Maybe?)
 
+# Running localy
+
+Feel free to download, and modify the code!
+Before running it, make sure that all packages are installed, by running `npm intall` in the root directory.
+You can run the application with `node index.js`, or with the shorter `node .` command.
+
 # Sources
 
 [API documentation](https://github.com/bczsalba/ekreta-docs-v3) (Copyright (c) 2020 bczsalba)
