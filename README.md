@@ -55,7 +55,7 @@ Before running it, make sure that all packages are installed, by running `npm in
 You can run the application with `node index.js`, or with the shorter `node .` command.
 The application will run on port `3919` by default, but you can change that in the *index.js* file, with the `PORT` varible.
 
-## Runnning in 2 steps:
+### Runnning in 2 steps:
 
 1. `npm install`
 2. `node .`
