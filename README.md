@@ -10,7 +10,7 @@ You can find the files for the open source Táblafilc e-kreta API here!
 ## Change log
 
 - Added login screen
-- Now hosted permanetly (here)[http://tablafilc.samunemeth.hu]
+- Now hosted permanetly [here](http://tablafilc.samunemeth.hu)
 
 <a name="goal"/>
 
