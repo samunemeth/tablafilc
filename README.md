@@ -1,33 +1,39 @@
 <a name="version" />
 
-# Version Alpha 1.0.0
+# Version Alpha 1.1.0
 
-This is the first official release!
+This is the first release with GUI!
 You can find the files for the open source Táblafilc e-kreta API here!
 
 <a name="changelog"/>
 
 ## Change log
 
-This is the first version!
+- Added login screen
+- Now hosted permanetly (here)[http://tablafilc.samunemeth.hu]
 
 <a name="goal"/>
 
 ## Goal
 
-The goal of this version, is to implemet basic API connectivity.
+The goal of this version, is to add a basic GUI.
 
 <a name="usage"/>
 
 ## usage
 
-It's just a **command line** api!
-There is no visual interface, but you can login, get evaluations and the timetable.
+There is some visual interface, but you cann't get evaluations and the timetable from it.
 
 ### Login
 
+#### Code
+
 You can login with the `getToken(username, password, institute, [callback]);` function.
 For this the server will return a formatted **token** (sometimes called **bearer**), and it will be saved to the `token` varible.
+
+#### GUI
+
+Enter you username and you password to your e-kreta profile, then select your institute and press login (Bejelentkezés);
 
 
 ### Evaluatins
@@ -46,6 +52,11 @@ You can get the organized evaluations from the `.marks` list.
 
 I'm not planning on useing this data yet, so it is just for fun!
 The request function is **not completed yet**!
+
+### Institutes
+
+You can send a request for all insitutes in the system with the `getInstitutes([callback]);` function.
+This will return a list of institute objects.
 
 ### Callback functions
 
@@ -80,7 +91,8 @@ The application will run on port `3919` by default, but you can change that in t
 This is just a small part of a bigger project!
 
 - [X] API connection
-- [ ] User interface
+- [X] Login screen
+- [ ] Interface
 - [ ] Calculations
 - [ ] Project planner (Maybe?)
 
