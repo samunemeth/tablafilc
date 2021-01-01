@@ -1,4 +1,7 @@
+/* for organizing raw evaluations data to a more readable format */
+
 class Marks {
+    /* constructor */
     constructor(eval_) {
         //save it
         this.eval = eval_;
@@ -32,6 +35,40 @@ class Marks {
         });
     }
 
+    /* get */
+
+    //marks
+    get marks() {
+        //returna copy
+        return [...this.marks];
+    }
+
+    //classes
+    get classes() {
+        //create list
+        let classes = [];
+
+        //fill list
+        this.marks.forEach((elem) => {
+            classes.push({
+                name: elem.name,
+                teacher: elem.teacher,
+            });
+        });
+
+        //return
+        return classes;
+    }
+
+    /* set */
+
+    //protection
+    set marks(x) { console.error('This varible is protected!'); };
+    set classes(x) { console.error('This varible is protected!'); };
+
+    /* static */
+
+    //weighted avrage
     static avrage(arr) {
         //varibles
         let sum = 0;

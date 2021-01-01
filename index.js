@@ -11,19 +11,32 @@ global.io = socketio(server);
 
 //importing files
 global.api = require('./api');
-
-//settings
-const PORT = 3919;
+global.settings = require('./settings.json');
 
 //express seving site
 app.use(express.static('public'));
-server.listen(PORT, () => { console.log(`>Listenin on port ${PORT}`) });
+server.listen(settings.port, () => { console.log(`>Listenin on port ${settings.port}`) });
 
 //init api
 api.init();
 
 //socket server
 io.on('connection', (socket) => {
+
+    //institutes request
+    socket.on('institutes', (callback) => {
+        //request
+        let institutes = api.institutes();
+
+        //error
+        if (!institutes) {
+            socket.emit('error', 'institutes');
+            return;
+        }
+
+        //reply
+        callback(institutes);
+    });
 
     //login request
     socket.on('login', (credentials, callback) => {

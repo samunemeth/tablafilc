@@ -3,6 +3,14 @@
 
 /* sending */
 
+//request schools
+function getInstitutes(callback = () => {}) {
+    //send request
+    socket.emit('institutes', (res) => {
+        callback(res);
+    });
+}
+
 //send a request for a token
 function getToken(username, password, institute, callback = () => {}) {
 

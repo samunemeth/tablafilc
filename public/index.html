@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- general settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://samunemeth.hu/public/chosen/chosen.css">
+
+    <!-- title -->
     <title>Táblafilc</title>
 </head>
 <body>
     <!-- general html -->
-    <p>Hello!</p>
+    <div class="login-background">
+        <input type="text" id="username" class="login-input" placeholder="Felhasználónév">
+        <input type="password" id="password" class="login-input" placeholder="Jelszó">
+        <select id="school" class="login-input chosen-select" single data-placeholder="Válassz iskolát"></select>
+        <button class="login-button" id="login-button">Bejelentkezés</button>
+    </div>
 
     <!-- including socket.io -->
     <script src="/socket.io/socket.io.js"></script>
     <script> let socket = io(); </script>
 
+    <!-- jqury -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://samunemeth.hu/public/chosen/chosen.jquery.js"></script>
+
     <!-- script -->
-    <script src="sketch.js"></script>
-    <script src="marks.js"></script>
+    <script src="dom.js"></script>
     <script src="comunication.js"></script>
+    <script src="marks.js"></script>
+    <script src="sketch.js"></script>
 </body>
 </html>
