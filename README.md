@@ -1,16 +1,9 @@
+<a name="version" />
+
 # Version Alpha 1.0.0
 
 This is the first official release!
 You can find the files for the open source Táblafilc e-kreta API here!
-
-## Table of contents
-
-- [Change log](#changelog)
-- [Goal](#goal)
-- [Usage](#usage)
-- [Running localy](#runninglocaly)
-- [Conclusion](#conclusion)
-- [Sources](#sources)
 
 <a name="changelog"/>
 
