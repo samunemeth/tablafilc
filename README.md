@@ -1,74 +1,35 @@
 <a name="version" />
 
-# Version Alpha 1.1.0
+# Version Alpha 2.0.0
 
-This is the first release with GUI!
-You can find the files for the open source Táblafilc e-kreta API here!
+A lot of things changed in this update, but the most important thig is the **grade calculator**!
 
 <a name="changelog"/>
 
 ## Change log
 
-- Added login screen
-- Now hosted permanetly [here](http://tablafilc.samunemeth.hu)
+- Added the grade calculator screen, and possibility for othere screens too
+- Switched from chosen to [select2](#select2)
+- Added username and school storing to local storage
 
 <a name="goal"/>
 
 ## Goal
 
-The goal of this version, is to add a basic GUI.
+The goal of this version, is to implement the basic grade calculator, and experiment with the design of it.
 
 <a name="usage"/>
 
-## usage
-
-There is some visual interface, but you cann't get evaluations and the timetable from it.
+## Usage
 
 ### Login
 
-#### Code
+Enter you e-kreta password and username to the input boxes, select your school from the dropdown and press login.
 
-You can login with the `getToken(username, password, institute, [callback]);` function.
-For this the server will return a formatted **token** (sometimes called **bearer**), and it will be saved to the `token` varible.
+### Calculating grades
 
-#### GUI
-
-Enter you username and you password to your e-kreta profile, then select your institute and press login (Bejelentkezés);
-
-
-### Evaluatins
-
-You can request for the evaluatins with the `getEvaluation(token, [callback]);` function.
-The token parameter expects a json formatted token object, that we got from the `getToken` function.
-The server will return the raw fetched json, and the function will save it to the `evaluations varible`.
-
-#### Marks class
-
-This is a client side class for **organising** the returned raw data.
-You can use it by passing it the raw data, like this: `let marks = new Marks(evaluations)`.
-You can get the organized evaluations from the `.marks` list.
-
-### Timetable
-
-I'm not planning on useing this data yet, so it is just for fun!
-The request function is **not completed yet**!
-
-### Institutes
-
-You can send a request for all insitutes in the system with the `getInstitutes([callback]);` function.
-This will return a list of institute objects.
-
-### Callback functions
-
-They are **optional**, the function will save the response regardless.
-They will recive the server response as a parameter.
-If the server returns an error, the callback function won't be called!
-
-### Errors
-
-Error handeling is on the **minimal** side for now.
-In case of an error, the server will return an error message, with a code indicating the source off the error.
-Incorrect password or username counts as an error too!
+Select your desired class, then enter a grade that is better than your avrage now, then press calculate!
+You might get an error message, that your goal has alredy bean reached!
 
 <a name="runninglocaly" />
 
@@ -79,7 +40,7 @@ Before running it, make sure that all packages are installed, by running `npm in
 You can run the application with `node index.js`, or with the shorter `node .` command.
 The application will run on port `3919` by default, but you can change that in the *index.js* file, with the `PORT` varible.
 
-### Runnning in 2 steps:
+### in 2 steps:
 
 1. `npm install`
 2. `node .`
@@ -88,12 +49,12 @@ The application will run on port `3919` by default, but you can change that in t
 
 ## Conclusin
 
-This is just a small part of a bigger project!
+We are getting there!
 
 - [X] API connection
 - [X] Login screen
-- [ ] Interface
-- [ ] Calculations
+- [x] Interface
+- [x] Calculations
 - [ ] Project planner (Maybe?)
 
 <a name="sources" />
@@ -101,3 +62,5 @@ This is just a small part of a bigger project!
 ## Sources
 
 [API documentation](https://github.com/bczsalba/ekreta-docs-v3) (Copyright (c) 2020 bczsalba)
+<a name="select2" />
+[select2](https://github.com/select2/select2) (Copyright (c) 2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors)
