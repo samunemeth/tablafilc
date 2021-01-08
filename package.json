@@ -1,0 +1,23 @@
+{
+  "name": "kretapi",
+  "version": "3.0.0",
+  "description": "Simple api for e-kreta",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Németh Samu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.0.4",
+    "sync-fetch": "^0.3.0"
+  }
+}
