@@ -61,6 +61,8 @@ We are getting there!
 
 ## Sources
 
+<a name="API" />
+
 [API documentation](https://github.com/bczsalba/ekreta-docs-v3) (Copyright (c) 2020 bczsalba)
 
 <a name="select2" />
