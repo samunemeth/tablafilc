@@ -12,7 +12,7 @@ module.exports = {
         
         //check for error message
         if (get.error) {
-            console.error(get.error);
+            // console.error(get.error);
             return false;
         }
 
@@ -33,7 +33,7 @@ module.exports = {
 
         //check for error message
         if (get.error) {
-            console.error(get.error);
+            // console.error(get.error);
             return false;
         }
 
@@ -59,7 +59,7 @@ module.exports = {
 
         //check for error message
         if (get.error) {
-            console.error(get.error);
+            // console.error(get.error);
             return false;
         }
 
@@ -87,7 +87,7 @@ module.exports = {
 
         //check for error message
         if (get.error) {
-            console.error(get.error);
+            // console.error(get.error);
             return false;
         }
 
@@ -123,7 +123,7 @@ module.exports = {
 
         //check for error
         if (!get) {
-            console.error('Invalid password or username!');
+            // console.error('Invalid password or username!');
             return false;
         }
 
@@ -145,7 +145,7 @@ module.exports = {
 
         //check for error
         if (!get) {
-            console.error('Error while getting data!');
+            // console.error('Error while getting data!');
             return false;
         }
 
@@ -160,7 +160,7 @@ module.exports = {
 
         //check for error
         if (!get) {
-            console.error('Error while getting data!');
+            // console.error('Error while getting data!');
             return false;
         }
 

@@ -7,31 +7,85 @@
 
     <!-- css -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://samunemeth.hu/public/chosen/chosen.css">
+    <link rel="stylesheet" href="data/select2.min.css">
 
     <!-- title -->
     <title>Táblafilc</title>
 </head>
 <body>
-    <!-- general html -->
+    <!-- login screen -->
     <div class="login-background">
+
+        <!-- password and username -->
         <input type="text" id="username" class="login-input" placeholder="Felhasználónév">
         <input type="password" id="password" class="login-input" placeholder="Jelszó">
-        <select id="school" class="login-input chosen-select" single data-placeholder="Válassz iskolát"></select>
+
+        <!-- school selector -->
+        <select id="school" class="login-input chosen-select">
+            <option value="none" id="login-placeholder">Betöltés...</option>
+        </select>
+
+        <!-- error codes -->
+        <p id="login-error-1" class="login-error">Hibás felhasználónév vagy jelszó!</p>
+        <p id="login-error-2" class="login-error">Az értékek megadása kötelező!</p>
+
+        <!-- login button -->
         <button class="login-button" id="login-button">Bejelentkezés</button>
+    </div>
+
+    <!-- main screen -->
+    <div class="content-background">
+        <div class="content-navbar">
+            <button class="active" id="content-navbar-1" onclick="activate(1)">Tervező</button>
+        </div>
+
+        <!-- 1. page -->
+        <div id="content-1" class="content" style="display: flex;">
+
+            <!-- class select -->
+            <h3 style="margin: 40px 0 5px 0;">Tantárgy:</h3>
+            <select id="class" class="content-input chosen-select" onchange="updateAvrage()">
+                <option value="none" id="class-placeholder">Betöltés...</option>
+            </select>
+
+            <!-- now -->
+            <h3>Most: <marker id="avrage">Betöltés...</marker></h3>
+
+            <!-- goal -->
+            <h3 style="margin: 5px 0 5px 0">Kitűzött cél:</h3>
+            <input type="number" id="goal" class="content-input" max="5">
+
+            <!-- result -->
+            <h3 style="margin-bottom: 5px">Ennek eléréséhez szükséges:</h3>
+            <div class="content-result content-input">
+                <p id="content-grades-5" > <strong id="content-grades-5-n">n</strong> darab 5-ös, </p>
+                <p id="content-grades-4" > vagy <strong id="content-grades-4-n"> n </strong> darab 4-es, </p>
+                <p id="content-grades-3" > vagy <strong id="content-grades-3-n"> n </strong> darab 3-as, <br></p>
+                <p id="content-grades-2" > vagy <strong id="content-grades-2-n"> n </strong> darab 2-es, <br></p>
+                <p id="content-grades-1" > vagy <strong id="content-grades-2-n"> n </strong> darab 1-es, <br></p>
+            </div>
+
+            <!-- error codes -->
+            <p id="content-1-error-1" class="content-1-error">A cél nem 5 vagy annál nagyobb!</p>
+            <p id="content-1-error-2" class="content-1-error">A cél nem 1 vagy annál kisebb!</p>
+            <p id="content-1-error-3" class="content-1-error">A célt már elérted!</p>
+
+            <!-- calulate button -->
+            <button id="calculate" class="content-calculate-button">Számítás</button>
+        </div>
     </div>
 
     <!-- including socket.io -->
     <script src="/socket.io/socket.io.js"></script>
     <script> let socket = io(); </script>
 
-    <!-- jqury -->
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="http://samunemeth.hu/public/chosen/chosen.jquery.js"></script>
+    <script src="data/select2.min.js"></script>
 
     <!-- script -->
     <script src="dom.js"></script>
-    <script src="comunication.js"></script>
+    <script src="com.js"></script>
     <script src="marks.js"></script>
     <script src="sketch.js"></script>
 </body>

@@ -38,10 +38,10 @@ class Marks {
     /* get */
 
     //marks
-    get marks() {
-        //returna copy
-        return [...this.marks];
-    }
+    // get marks() {
+    //     //returna copy
+    //     return [...this.marks];
+    // }
 
     //classes
     get classes() {
@@ -63,8 +63,8 @@ class Marks {
     /* set */
 
     //protection
-    set marks(x) { console.error('This varible is protected!'); };
-    set classes(x) { console.error('This varible is protected!'); };
+    // set marks(x) { console.error('This varible is protected!'); };
+    // set classes(x) { console.error('This varible is protected!'); };
 
     /* static */
 

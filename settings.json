@@ -1,3 +1,4 @@
 {
-    "port": 3919
+    "port": 3919,
+    "userLogFile": "users.log"
 }

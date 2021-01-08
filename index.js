@@ -3,6 +3,7 @@ global.fetch = require('sync-fetch');
 global.express = require('express');
 global.http = require('http');
 global.socketio = require('socket.io');
+global.fs = require('fs');
 
 //initing libaries
 global.app = express();
@@ -20,8 +21,30 @@ server.listen(settings.port, () => { console.log(`>Listenin on port ${settings.p
 //init api
 api.init();
 
+//count users
+let usercount = 0;
+fs.writeFile(settings.userLogFile, '', ()=>{});
+
+//logging
+function log(data, file=null) {
+    console.log(data);
+    if (file) {
+        fs.appendFile(file, `${data}\n`, ()=>{});
+    }
+}
+
 //socket server
 io.on('connection', (socket) => {
+
+    //count users
+    usercount++;
+    let id = usercount;
+    log(`>user #${id} connected`, file=settings.userLogFile);
+
+    //disconnect
+    socket.on('disconnect', () => {
+        log(`>user #${id} disconnected`, file=settings.userLogFile);
+    });
 
     //institutes request
     socket.on('institutes', (callback) => {
