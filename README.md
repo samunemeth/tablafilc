@@ -1,5 +1,9 @@
 <a name="version" />
 
+# Tablafilc was shut down!
+
+The api that tablafilc relied on, was removed. Tablafilc will no longeer be hosted, and this repo will be archived.
+
 # Version Alpha 2.0.0
 
 A lot of things changed in this update, but the most important thig is the **grade calculator**!
